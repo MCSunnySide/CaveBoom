@@ -1,0 +1,16 @@
+materials:
+  - TORCH
+  - LANTERN
+  - FIRE
+chance:
+  trigger: 25 # Int 放下火把触发爆炸的几率 (x分之1)
+  explode: 5 # Int 连锁引爆几率(x分之1)
+depth: 25  # Int 整数 限制最大爆炸计算深度
+power: 2.0 #Float 浮点数 TNT的爆炸是4.0
+breakblocks: true #破坏方块
+fire: true #起火
+
+worlds:
+  - world
+
+#caveboom.bypass 避免爆炸

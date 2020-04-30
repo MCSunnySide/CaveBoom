@@ -1,0 +1,6 @@
+name: CaveBoom
+version: ${project.version}
+main: com.mcsunnyside.caveboom.caveboom.CaveBoom
+api-version: 1.13
+description: Create a explosion in cave with random chance
+author: Ghost_chu
