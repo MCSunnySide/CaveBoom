@@ -33,7 +33,7 @@ public class Scheduler {
                 }
                 caches.forEach(loc -> {
                     if (random.nextInt(chance) == 0) {
-                        loc.getWorld().createExplosion(loc, power, fire, breakBlocks);
+                        loc.getWorld().createExplosion(loc.getX(),loc.getY(),loc.getZ(), power, fire, breakBlocks);
                     }
                 });
                 caches.clear();

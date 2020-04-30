@@ -25,7 +25,16 @@ public final class CaveBoom extends JavaPlugin {
             materialList.add(material);
         }
 
-        Bukkit.getPluginManager().registerEvents(new Listeners(this, getConfig().getInt("chance.trigger"), materialList, new Scheduler(this, getConfig().getInt("depth"), getConfig().getInt("chance.explode"), (float) getConfig().getDouble("power", 4.0d), getConfig().getBoolean("fire"), getConfig().getBoolean("breakblocks")), getConfig().getStringList("worlds")), this); //ok
+        Bukkit.getPluginManager().registerEvents(
+                new Listeners(this, getConfig().getInt("chance.trigger")
+                        , materialList
+                        , new Scheduler(this, getConfig().getInt("depth")
+                        , getConfig().getInt("chance.explode")
+                        , (float) getConfig().getDouble("power", 4.0d)
+                        , getConfig().getBoolean("fire")
+                        , getConfig().getBoolean("breakblocks"))
+                        , getConfig().getStringList("worlds"))
+                , this); //ok
         getLogger().info("插件启动完毕");
     }
 
