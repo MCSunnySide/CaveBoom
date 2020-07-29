@@ -3,14 +3,14 @@ materials:
   - LANTERN
   - FIRE
 chance:
-  trigger: 25 # Int 放下火把触发爆炸的几率 (x分之1)
-  explode: 5 # Int 连锁引爆几率(x分之1)
-depth: 25  # Int 整数 限制最大爆炸计算深度
-power: 2.0 #Float 浮点数 TNT的爆炸是4.0
-breakblocks: true #破坏方块
-fire: true #起火
+  trigger: 25 # Int Make explode chances. (1/trigger) 放下火把触发爆炸的几率 (x分之1)
+  explode: 5 # Int Make explode chains trigger chances (1/explode) [If explode=2, one explode have 50% chances create another new explode in cave_air)
+depth: 25  # Int Limit explode calc max depth
+power: 2.0 #Float float, explode power
+breakblocks: true #should we break the blocks?
+fire: true #should we ignote the fire when exploding?
 
 worlds:
   - world
 
-#caveboom.bypass 避免爆炸
+#caveboom.bypass the permission to bypass trigger explode.
