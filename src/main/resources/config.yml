@@ -3,7 +3,7 @@ materials:
   - LANTERN
   - FIRE
 chance:
-  trigger: 25 # Int Make explode chances. (1/trigger) 放下火把触发爆炸的几率 (x分之1)
+  trigger: 25 # Int Make explode chances when placing torch. (1/trigger) 
   explode: 5 # Int Make explode chains trigger chances (1/explode) [If explode=2, one explode have 50% chances create another new explode in cave_air)
 depth: 25  # Int Limit explode calc max depth
 power: 2.0 #Float float, explode power
